@@ -3,7 +3,6 @@ Flask
 itsdangerous
 Jinja2
 MarkupSafe
-pkg-resources
 py
 pytest
 Werkzeug
