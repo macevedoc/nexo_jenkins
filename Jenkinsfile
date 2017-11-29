@@ -4,8 +4,10 @@ pipeline {
     stage ('Example') {
       steps {
         echo 'hola marco'
+      },
+      steps {
+        sh 'ls -l /xxxxxxxx'
       }
-
     }
   }
 }
