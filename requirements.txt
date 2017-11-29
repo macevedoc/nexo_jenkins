@@ -5,4 +5,3 @@ Jinja2
 MarkupSafe
 py
 pytest
-Werkzeug
