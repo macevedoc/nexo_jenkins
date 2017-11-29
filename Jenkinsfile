@@ -9,14 +9,14 @@ pipeline {
           sh 'ls -l /xxxxxxxx'
         }
       }
-    }
+
     post {
         always {
             echo 'hola nuevamente!!!!!'
         }
     }
 }
-
+}
 /*  stages {
         stage('Checkuot-git') {
           steps{
