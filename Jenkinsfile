@@ -6,25 +6,9 @@ pipeline {
         git poll: true, url:  'https://github.com/macevedoc/nexo_jenkins.git'
       }
     }
-    stage ('CreateVirtualEnv') {
+    stage ('TestHtml') {
       steps {
-        sh 'virtualenv entormo_virtual'
-        sh 'source entormo_virtual/bin/activate'
-      }
-    }
-    stage ('InstallRequieriments') {
-      steps {
-        sh 'pip install -r requirements.txt'
-      }
-    }
-    stage ('TestApp') {
-      steps {
-        sh 'cd src && pytest && cd ..'
-      }
-    }
-    stage('RunApp') {
-      steps {
-        sh 'python src/main.py &'
+        sh 'll index.html'
       }
     }
     stage('BuildDocker') {
