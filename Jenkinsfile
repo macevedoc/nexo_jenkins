@@ -4,6 +4,7 @@ pipeline {
     stage ('Example') {
       steps {
         echo 'hola marco'
+        echo 'xxxxxxxx'
       }
     }
     stage ('Error') {
