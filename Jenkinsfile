@@ -1,7 +1,7 @@
 pipeline {
   agent any
     stages {
-      stage('Example') {
+      stage ('Example') {
         steps {
           echo 'hola marco'
         }
@@ -9,13 +9,12 @@ pipeline {
           sh 'ls -l /xxxxxxxx'
         }
       }
-
+    }
     post {
         always {
             echo 'hola nuevamente!!!!!'
         }
     }
-}
 }
 /*  stages {
         stage('Checkuot-git') {
