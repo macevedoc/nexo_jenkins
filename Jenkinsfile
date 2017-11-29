@@ -7,11 +7,7 @@ pipeline {
         echo 'xxxxxxxx'
       }
     }
-    stage ('Error') {
-      steps {
-        sh 'ls -l /xxxxxxxx'
-      }
-    }
+
   }
 }
 /*  stages {
