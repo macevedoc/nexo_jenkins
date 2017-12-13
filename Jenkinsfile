@@ -8,7 +8,7 @@ pipeline {
     }
     stage ('TestHtml') {
       steps {
-        sh 'ls -la index2.html'
+        sh 'ls -la index.html'
       }
     }
     stage('BuildDocker') {
