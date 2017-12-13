@@ -6,4 +6,4 @@ RUN apt clean
 COPY index.html /var/www/html/
 EXPOSE 80
 CMD service apache2 start
-ENTRYPOINT ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+ENTRYPOINT /usr/sbin/apache2ctl -D FOREGROUND
